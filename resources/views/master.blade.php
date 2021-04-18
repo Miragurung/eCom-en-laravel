@@ -17,12 +17,18 @@
     {{View::make('header')}}
     @yield('content')
     {{View::make('footer')}}
+    
 
 </body>
 <style>
     .custom-login{
         height: 500px;
         padding-top: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration-color: ghostwhite;
+        background-image: url(https://img.freepik.com/free-photo/trendy-female-with-cocktail-shopping-bags_23-2148170087.jpg?size=626&ext=jpg);
     }
     img.slider-img{
         height: 400px !important
@@ -34,25 +40,52 @@
         background-color: #35443585 !important;
     }
     .trending-image{
-        height: 100px;
+        height: 150px;
     }
     .trening-item{
         float: left;
-        width: 20%;
+        width: 32%;
+        background-color: ghostwhite;
+        
     }
     .trending-wrapper{
-        margin: 30px;
+        margin: 40px;
     }
     .detail-img{
-        height: 200px;
+        height: 300px;
     }
     .search-box{
         width: 500px !important
     }
     .cart-list-devider{
         border-bottom: 1px solid #ccc;
-        margin-bottom: 20px;
-        padding-bottom: 20px
+        margin-bottom: 50px;
+        padding-bottom: 100px;
+        background-color: floralwhite;
     }
+body{
+        background-color:rgb(243, 237, 237);
+    }
+.navbar{
+    background-color:rgb(250, 112, 112);
+    
+}
+button{
+    background-color: dimgrey;
+}
+h3{
+    text-decoration-color: black;
+    background-color: rgb(248, 201, 201);
+    text-decoration-style: dashed;
+    tex
+}
+h1{
+
+    
+    background-size:5000px 5000px;
+    background-repeat:no-repeat;
+    background-image:url(https://img.freepik.com/free-photo/girl-holds-fashion-shopping-bag-beauty_1150-13673.jpg?size=626&ext=jpg);
+}
+
 </style>
 </html>

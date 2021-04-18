@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Database\QueryException;
 
 class ProductSeeder extends Seeder
 {
@@ -17,33 +18,35 @@ class ProductSeeder extends Seeder
         //
         DB::table('products')->insert([
             [
-                'name'=>'Oppo mobile',
-                "price"=>"300",
-                "description"=>"A smartphone with 8gb ram and much more feature",
-                "category"=>"mobile",
-                "gallery"=>"https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-A52-6-GFUTU6297453D3D253C/1592019058170_0..png"
+                'name'=>'Panasonic Refrigerator',
+                "price"=>"30000",
+                "description"=>"A feezer with lots of features",
+                "category"=>"Freezer",
+                "gallery"=>" https://www.google.com/search?q=refrigerator&sxsrf=ALeKk03fFOKknb5I1QeWAXVlMamf0Ey2hA:1618641059979&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjqjZjr04TwAhXR7HMBHb0yCjgQ_AUoAnoECAIQBA&biw=1280&bih=578&dpr=1.5#imgrc=uBYfhlnioERfNM"
             ],
             [
-                'name'=>'Panasonic Tv',
-                "price"=>"400",
-                "description"=>"A smart tv with much more feature",
-                "category"=>"tv",
-                "gallery"=>"https://i.gadgets360cdn.com/products/televisions/large/1548154685_832_panasonic_32-inch-lcd-full-hd-tv-th-l32u20.jpg"
+                'name'=>'LG Refrigerator',
+                "price"=>"25000",
+                "description"=>"A single door freezer with much more feature",
+                "category"=>"freezer",
+                "gallery"=>"https://www.sathya.in/Media/Default/Thumbs/0029/0029021-lg-fridge-gld241argy.jpg"
             ],
             [
-                'name'=>'Soni Tv',
-                "price"=>"500",
-                "description"=>"A tv with much more feature",
-                "category"=>"tv",
-                "gallery"=>"https://4.imimg.com/data4/PM/KH/MY-34794816/lcd-500x500.png"
+                'name'=>'Smart Refrigerator',
+                "price"=>"50000",
+                "description"=>"A four door freezer with much more feature",
+                "category"=>"freezer",
+                "gallery"=>"https://kitchenaid-h.assetsadobe.com/is/image/content/dam/business-unit/whirlpool/en-us/marketing-content/site-assets/page-content/refrigerator-sclp/Images/masthead/WHP_ReferSCLP_Mobile_IMG3x-updated.jpg?fit=constrain&fmt=jpg&utc=2018-09-19T19:00:56Z&wid=1245"
             ],
             [
-                'name'=>'LG fridge',
-                "price"=>"200",
-                "description"=>"A fridge with much more feature",
-                "category"=>"fridge",
-                "gallery"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFx-2-wTOcfr5at01ojZWduXEm5cZ-sRYPJA&usqp=CAU"
-             ]
+                'name'=>'Samsung Refrigeratoe',
+                "price"=>"500089",
+                "description"=>"A smart freezer with much more feature",
+                "category"=>"freezer",
+                "gallery"=>" https://cdn.vox-cdn.com/thumbor/l94s97ID2tyTUh6kKeEr0vz1oA0=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19568996/Family_Hub_CES2020_Black__1_.jpg"
+            ]
+
+           
         ]);
     }
 }

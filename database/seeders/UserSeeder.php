@@ -20,5 +20,6 @@ class UserSeeder extends Seeder
             'email'=>'miragurung9931@gmail.com',
             'password'=>Hash::make('12345')
         ]);
+    
     }
 }
